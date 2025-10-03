@@ -1,0 +1,145 @@
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1e1e2f; /* Darker color for a sleek look */
+  transition: left 0.4s ease; /* Smooth transition */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensures sidebar stays on top */
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+/* Wrapper for main content */
+.wrapper {
+  margin-left: 0;
+  transition: margin-left 0.4s ease;
+}
+
+.wrapper.move {
+  margin-left: 250px;
+}
+
+/* Links styling */
+.links {
+  padding: 20px;
+}
+
+.links div {
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.links div:hover {
+  color: #fbbd08; /* Gold color on hover */
+}
+
+.links div svg {
+  margin-right: 10px;
+}
+
+.links div span {
+  font-size: 1rem;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Logo styling */
+.logo {
+  width: 150px; /* Adjusts logo size */
+  height: auto;
+  display: block;
+  margin: 45px;
+  border-radius: 50%;
+  border: 2px solid #fbbd08;
+}
+
+/* Media Queries for Responsive Sidebar */
+@media (max-width: 1208px) {
+  .sidebar {
+    left: -100%;
+    width: 220px;
+    background: #292943;
+    transition: 0.4s;
+  }
+
+  .sidebar.show {
+    left: 0;
+    width: 220px;
+    transition: 0.4s;
+  }
+
+  .wrapper {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    background: #3939d9f2;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    top: 0;
+    width: 100%; /* Full-width sidebar for mobile */
+    height: 100vh;
+    left: -100%;
+    transition: top 0.4s ease-in-out;
+  }
+
+  .sidebar.show {
+    top: 0;
+    left: 0;
+  }
+
+  .wrapper {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 485px) {
+  .links div {
+    font-size: 0.9rem;
+  }
+
+  .wrapper {
+    left: 15px;
+    top: 10px;
+    font-size: 1.3rem;
+  }
+
+  .sidebar.show {
+    width: 100%; /* Ensures sidebar covers the screen */
+  }
+}

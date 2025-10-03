@@ -1,0 +1,87 @@
+/* Container for the entire form */
+.container1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+  }
+  
+  /* Form Component */
+  .form-component {
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Logo styling */
+  .form-component img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Heading */
+  .form-component h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Subtext */
+  .form-component p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .form-component input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .form-component input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Submit Button */
+  .form-component button {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-component button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .form-component {
+      padding: 30px 20px;
+    }
+  
+    .form-component h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

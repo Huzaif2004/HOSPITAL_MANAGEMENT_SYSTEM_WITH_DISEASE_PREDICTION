@@ -1,0 +1,86 @@
+/* Main section styling */
+.doctors {
+    padding: 40px;
+    background-color: #f5f7fa;
+  }
+  
+  .doctors h1 {
+    color: #3944bc;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  /* Grid layout for cards */
+  .doctors .banner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+  }
+  
+  .doctors .banner .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .doctors .banner .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .doctors .banner .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #3944bc;
+  }
+  
+  /* Doctor name styling */
+  .doctors .banner .card h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* Details section styling */
+  .doctors .banner .card .details {
+    width: 100%;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .doctors .banner .card .details p {
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  
+  .doctors .banner .card .details p span {
+    font-weight: 500;
+    color: #3944bc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .doctors .banner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .doctors .banner {
+      grid-template-columns: 1fr;
+    }
+  }
+  

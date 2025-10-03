@@ -1,0 +1,97 @@
+/* Styles for the parent container */
+.parent {
+    display: flex;
+    background-color: #e9ecef; /* Soft background for the full view */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add padding to the parent */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+/* Styles for the container */
+.container-patient {
+    max-width: 600px; /* Set a maximum width for better readability */
+    width: 100%; /* Full width until max-width */
+    margin: 20px; /* Margin around the container */
+    padding: 20px; /* Padding around the content */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    transition: transform 0.3s; /* Smooth scale on hover */
+}
+
+/* Hover effect for the container */
+.container-patient:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Title styling */
+.page-title {
+    font-size: 2.5rem; /* Larger font size for title */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center the title */
+    color: #343a40; /* Darker text color */
+    font-weight: 600; /* Bolder font */
+}
+
+/* List styling */
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+/* List item styling */
+li {
+    background-color: #f8f9fa; /* Light grey for each patient card */
+    margin-bottom: 15px; /* Space between cards */
+    padding: 15px; /* Padding inside each card */
+    border-radius: 5px; /* Rounded corners for cards */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    transition: box-shadow 0.3s; /* Transition for shadow effect */
+}
+
+/* Hover effect for list items */
+li:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Strong text styling */
+strong {
+    display: block; /* Make the name block level */
+    font-size: 1.5rem; /* Slightly larger font for names */
+    margin-bottom: 5px; /* Space below the name */
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Button styling */
+.button-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Space above button */
+}
+
+.add-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 12px 24px; /* Padding for button */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+/* Button hover effect */
+.add-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+}
+
+/* No patients found message */
+.no-patients {
+    text-align: center; /* Center the message */
+    color: #6c757d; /* Muted color for the message */
+    font-size: 1.2rem; /* Larger font size for visibility */
+}

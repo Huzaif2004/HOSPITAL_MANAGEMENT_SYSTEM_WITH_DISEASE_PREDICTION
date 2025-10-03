@@ -1,0 +1,83 @@
+.form-title {
+    font-size: 2rem;
+    color: #271776;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-component {
+    padding: 40px 20px;
+    min-height: 100vh;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .page1{
+    width: 100%;
+  }
+  .form-component form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* Limit maximum width for larger screens */
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+  }
+  
+  .form-component input {
+    width: 100%; /* Full width for inputs */
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+  }
+  
+  .form-component input:focus {
+    outline: none;
+    border-color: #271776;
+  }
+  
+  .form-component button {
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: linear-gradient(140deg, #9083d5, #271776);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-component button:hover {
+    background: linear-gradient(140deg, #271776, #9083d5);
+  }
+  
+  @media (max-width: 600px) {
+    .form-component form {
+      padding: 0 10px;
+    }
+  
+    .form-row {
+      flex-direction: column; /* Ensure inputs stack on smaller screens */
+    }
+  
+    .form-component input {
+      font-size: 16px; /* Smaller font on mobile */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .form-title {
+      font-size: 1.5rem; /* Adjust title size for very small screens */
+    }
+  }
+  

@@ -1,0 +1,93 @@
+/* HeartDiseaseForm Component Specific Styles */
+.heart-disease-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.heart-disease-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.parent-heart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    height: 100vh;
+}
+.heart-disease-form form {
+    width: 100%;
+}
+
+.heart-disease-form table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px; /* Adds space between table data (columns) */
+}
+
+.heart-disease-form table td {
+    vertical-align: top;
+}
+
+.heart-disease-form .table-cell {
+    padding: 5px;
+}
+
+.heart-disease-form .form-group {
+    width: 100%;
+}
+
+.heart-disease-form .form-group label {
+    display: block;
+    font-size: 14px; /* Smaller label font */
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.heart-disease-form .form-group input[type="number"],
+.heart-disease-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px; /* Larger input and dropdown size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.heart-disease-form .form-group input[type="number"]:focus,
+.heart-disease-form .form-group select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.heart-disease-form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.heart-disease-form button:hover {
+    background-color: #218838;
+}
+
+.heart-disease-form .result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}

@@ -1,0 +1,84 @@
+/* Receptionists.css */
+
+/* Parent section styling */
+.parent-receptionists {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f4f8;
+    width: 100%; /* Light background color */
+}
+
+/* Container styling */
+.container-receptionists {
+    max-width: 600px; /* Max width for better readability */
+    margin: 20px; /* Margin around the container */
+    padding: 30px; /* Padding inside the container */
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title styling */
+.page-title {
+    font-size: 2.5rem; /* Larger font size for title */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center the title */
+    color: #343a40; /* Darker text color */
+    font-weight: 600; /* Bold font */
+}
+
+/* List styling */
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* List item styling */
+li {
+    background-color: #f8f9fa; /* Light grey for each receptionist card */
+    margin-bottom: 15px; /* Space between cards */
+    padding: 15px; /* Padding inside each card */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+/* Hover effect for list items */
+li:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Button styling */
+.button-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Space above button */
+}
+
+.add-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 12px 24px; /* Padding for button */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+/* Button hover effect */
+.add-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* No receptionists found message */
+.no-receptionists {
+    text-align: center; /* Center the message */
+    color: #6c757d; /* Muted color for the message */
+    font-size: 1.2rem; /* Larger font size for visibility */
+}

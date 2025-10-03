@@ -1,0 +1,237 @@
+/* General layout styling */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page {
+  background: #f5f7fa; /* Light background for the page */
+  padding: 50px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.dashboard .banner:first-child {
+  height: 35vh;
+  display: flex;
+  gap: 20px;
+}
+
+/* First Box */
+.dashboard .banner:first-child .firstBox {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: #d1e7fd; /* Light blue background */
+  padding: 20px 20px 0 10px;
+  color: #0a2540; /* Dark text for contrast */
+}
+
+.dashboard .banner:first-child .firstBox img {
+  
+  height: 120px;
+    width: 120px;
+    margin: 12px;
+    
+  border-radius: 15px;
+}
+
+.dashboard .banner:first-child .firstBox .content {
+  flex: 2;
+}
+
+.dashboard .banner:first-child .firstBox .content div {
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.dashboard .banner:first-child .firstBox .content div p {
+  margin-right: 10px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #0a2540;
+}
+
+.dashboard .banner:first-child .firstBox .content div h5 {
+  color: #ff6584; /* Accent color for user name */
+}
+
+.dashboard .banner:first-child .firstBox .content p {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+/* Second and Third Boxes */
+.dashboard .banner:first-child .secondBox {
+  background: #0077b6; /* Primary accent color */
+  color: #ffffff;
+}
+
+.dashboard .banner:first-child .thirdBox {
+  color: #0077b6;
+  background: #f5f7fa; /* Light background */
+  border: 1px solid #0077b6;
+}
+
+.dashboard .banner:first-child .secondBox,
+.dashboard .banner:first-child .thirdBox {
+  flex: 1;
+  border-radius: 20px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.dashboard .banner:first-child .secondBox p,
+.dashboard .banner:first-child .thirdBox p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dashboard .banner:first-child .secondBox h3,
+.dashboard .banner:first-child .thirdBox h3 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Second Banner (Appointments Table) */
+.dashboard .banner:last-child {
+  height: 65vh;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .banner:last-child h5 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #0a2540;
+}
+
+/* Table Styling */
+.dashboard .banner table {
+  width: 100%;
+  color: #0a2540;
+  font-size: 18px;
+}
+
+.dashboard .banner table thead {
+  font-size: 20px;
+  background-color: #f5f7fa;
+}
+
+.dashboard .banner table thead th {
+  padding: 12px 0;
+  color: #0077b6;
+  text-align: left;
+  border-bottom: 1px solid #d1e7fd;
+}
+
+.dashboard .banner table tbody td {
+  padding: 12px 0;
+}
+
+.dashboard .banner table td svg {
+  display: flex;
+  margin: 0 auto;
+}
+
+.dashboard .banner table td .green {
+  font-size: 20px;
+  color: #16a34a;
+}
+
+.dashboard .banner table td .red {
+  font-size: 20px;
+  color: #dc2626;
+}
+
+/* Status Colors */
+.dashboard .banner table .value-pending {
+  color: #eab308; /* Yellow for pending */
+}
+
+.dashboard .banner table .value-accepted {
+  color: #16a34a; /* Green for accepted */
+}
+
+.dashboard .banner table .value-rejected {
+  color: #dc2626; /* Red for rejected */
+}
+
+/* Media Queries */
+@media (max-width: 1376px) {
+  .dashboard .banner:first-child .firstBox .content div,
+  .dashboard .banner:first-child .firstBox .content div p {
+      font-size: 26px;
+  }
+  .dashboard .banner:first-child .firstBox .content p {
+      font-size: 14px;
+  }
+  .dashboard .banner:first-child .secondBox p,
+  .dashboard .banner:first-child .thirdBox p,
+  .dashboard .banner:first-child .secondBox h3,
+  .dashboard .banner:first-child .thirdBox h3 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .dashboard {
+      height: fit-content;
+  }
+  .dashboard .banner:first-child,
+  .dashboard .banner:last-child {
+      flex-wrap: wrap;
+      height: fit-content;
+  }
+  .dashboard .banner:first-child .firstBox {
+      flex: none;
+      width: 100%;
+      height: 265px;
+  }
+  .dashboard .banner:first-child .secondBox,
+  .dashboard .banner:first-child .thirdBox {
+      height: 175px;
+  }
+}
+
+@media (max-width: 620px) {
+  .dashboard .banner:first-child .secondBox,
+  .dashboard .banner:first-child .thirdBox {
+      width: 100%;
+      flex: none;
+  }
+}
+
+@media (max-width: 485px) {
+  .dashboard .banner:first-child .firstBox {
+      flex-direction: column;
+      height: fit-content;
+      padding: 20px;
+  }
+  .dashboard .banner:first-child .firstBox img {
+      width: 270px;
+      height: 270px;
+      margin-bottom: 25px;
+  }
+  .dashboard .banner:first-child .firstBox div {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .logo {
+      width: 100%;
+  }
+}
