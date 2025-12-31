@@ -107,14 +107,8 @@ The system follows a client-server architecture:
 - `HMS/frontend/hms/`: React app for patient interactions.
 - `HMS/dashboard/dashboard/`: React app for administrative tasks.
 - `diabetes/`: Python scripts and models for disease prediction, including Flask APIs.
-- `README.md`: This file.
 
-**Future Improvements**
 
-- Integrate more ML models for additional diseases.
-- Add real-time notifications for appointments.
-- Implement user roles and permissions more granularly.
-- Enhance UI/UX with responsive design and accessibility features.
-- Add testing frameworks for backend and frontend components.
+
 
 
